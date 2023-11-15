@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Your Webpage</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Arial', sans-serif;
+      background: linear-gradient(to right, #FF69B4, #FFFF00); /* Gradient from pink to yellow */
+    }
+
+    nav {
+      background-color: white;
+      padding: 15px 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    nav a {
+      color: #333;
+      text-decoration: none;
+      padding: 14px 16px;
+      display: inline-block;
+    }
+
+    nav a:hover {
+      background-color: #ddd;
+      color: black;
+    }
+
+    .phone-icon::before {
+      content: "\260E";
+      margin-right: 5px;
+    }
+
+    .cart-icon::before {
+      content: "\1F6D2";
+      margin-right: 5px;
+    }
+
+    .responsive-image {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    section {
+      text-align: center;
+      padding: 20px;
+    }
+
+    .image-container {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      margin: 20px 0;
+      flex-wrap: wrap;
+    }
+
+    .image-frame {
+      border: 2px solid #333;
+      padding: 15px;
+      width: 150px; /* Set the width of the frame */
+      height: 220px; /* Set the height of the frame */
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      background-color: #f8f8f8; /* Set background color */
+      border-radius: 10px; /* Set border radius */
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add box shadow */
+    }
+
+    .image-box {
+      margin: 10px;
+    }
+
+    .order-button {
+      padding: 10px 20px;
+      font-size: 16px;
+      background-color: #333;
+      color: white;
+      text-decoration: none;
+      border: none;
+      cursor: pointer;
+      margin-top: 20px;
+      display: inline-block;
+    }
+
+    .order-button:hover {
+      background-color: #555;
+    }
+
+    .image-text {
+      margin-top: 10px;
+      font-weight: bold;
+    }
+
+    .random-text {
+      margin-top: 10px;
+    }
+
+    /* Adjusted style for section */
+    #home {
+      width: 100%;
+      float: none;
+    }
+
+    #order-now {
+      width: 100%;
+      float: none;
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <a href="#">Home</a>
+    <a href="#">Order Food</a>
+    <a href="#">Restaurant</a>
+    <a href="#">Testimonials</a>
+    <a href="#">Contact Us</a>
+    <a href="#" class="phone-icon">Call Us</a>
+    <a href="#" class="cart-icon">Cart</a>
+  </nav>
+
+<!-- Home Section -->
+<section id="home" style="position: relative; width: 100%; box-sizing: border-box;">
+    <header>
+      <h1>Welcome to Your Webpage</h1>
+    </header>
+    <div style="position: relative; width: 100%; box-sizing: border-box;">
+      <img src="images/img1.jpg" alt="Your Image" class="responsive-image" style="width: 100%; box-sizing: border-box;">
+      <div style="position: absolute; top: 50%; left: 0; transform: translate(0, -50%); width: 50%; box-sizing: border-box;">
+        <div style="background: rgba(255, 255, 255, 0.9); padding: 20px; border-radius: 10px; box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);">
+          <div style="font-size: 24px; font-weight: bold; margin-bottom: 10px;">Lorem Ipsum</div>
+          <p style="font-size: 16px; font-weight: normal; color: black; margin: 0;">
+            has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+
+  <!-- Order Now Section -->
+  <section id="order-now">
+    <h1>Order Now</h1>
+    <div class="image-container">
+      <div class="image-box">
+        <div class="image-frame">
+          <img src="images/img2.jpg" alt="Image 1" class="responsive-image">
+          <div class="image-text">Pizza</div>
+          <div class="random-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
+        </div>
+      </div>
+      <div class="image-box">
+        <div class="image-frame">
+          <img src="images/img3.jpg" alt="Image 2" class="responsive-image" style="width: 60%;">
+          <div class="image-text">Pasta</div>
+          <div class="random-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
+        </div>
+      </div>
+      <div class="image-box">
+        <div class="image-frame">
+          <img src="images/img4.jpg" alt="Image 3" class="responsive-image" style="width: 80%;">
+          <div class="image-text">Burger</div>
+          <div class="random-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
+        </div>
+      </div>
+    </div>
+    <a href="#" class="order-button">Order Now</a>
+  </section>
+
+</body>
+</html>
